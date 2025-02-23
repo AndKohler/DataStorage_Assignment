@@ -401,7 +401,7 @@ public class MenuDialogs
         {
             Console.WriteLine($"Project Name: {project.ProjectName}, Description: {project.Description}, StartDate: {project.StartDate}, EndDate: {project.EndDate}, Manager:");
         }
-
+        Console.ReadKey();
     }
 
     private async Task ViewAllUsersAsync()
@@ -420,7 +420,7 @@ public class MenuDialogs
         {
             Console.WriteLine($"Name: {user.FirstName} {user.LastName}, Email: {user.Email}, PhoneNumber: {user.PhoneNumber}");
         }
-
+        Console.ReadKey();
     }
 
     private async Task ViewAllStatusesAsync()
@@ -439,7 +439,7 @@ public class MenuDialogs
         {
             Console.WriteLine($"Status: {status.Status}");
         }
-
+        Console.ReadKey();
     }
 
     private async Task UpdateProjectAsync()

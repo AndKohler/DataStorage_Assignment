@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Presentation;
 
 var services = new ServiceCollection()
-    .AddDbContext<DataContext>(options => options.UseSqlServer(@"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Workspace\\DataStorage_Assignment\\Data\\Databases\\database.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True"))
+    .AddDbContext<DataContext>(options => options.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Workspace\DataStorage_Assignment\Data\Databases\database.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True"))
     .AddScoped<IActivityStatusRepository, ActivityStatusRepository>()
     .AddScoped<ICustomerRepository, CustomerRepository>()
     .AddScoped<IProjectRepository, ProjectRepository>()
