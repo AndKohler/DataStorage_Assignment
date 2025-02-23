@@ -74,8 +74,6 @@ public abstract class BaseRepository<TEntity>(DataContext context) : IBaseReposi
         }
     }
 
-    // Det blir något fel i denna när jag försöker skapa något i min consol app. Jag är inte säker på vad felet är.
-
     public async Task<bool> AlreadyExistsAsync(Expression<Func<TEntity, bool>> expression)
     {
         return await _dbset.AnyAsync(expression);
